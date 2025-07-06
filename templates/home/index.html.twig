@@ -4,4 +4,15 @@
 
 {% block body %}
     {% include 'components/heroes/_home.html.twig' %}
+    <div class="my-5">
+        <h2 class="mb-4">Dernières offres</h2>
+        {% include 'components/cards/_job_card.html.twig' %}
+        {% include 'components/cards/_job_card.html.twig' %}
+    </div>
+
+    <div class="my-5">
+        <h2 class="mb-4">Freelances disponibles</h2>
+        {% include 'components/cards/_freelancer_card.html.twig' %}
+        {% include 'components/cards/_freelancer_card.html.twig' %}
+    </div>
 {% endblock %}
